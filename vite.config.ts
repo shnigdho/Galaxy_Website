@@ -9,6 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+
+  
   plugins: [
     react(),
     mode === 'development' &&
@@ -19,4 +21,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+
+  base: '/Galaxy_Website/', // Add this line for GitHub Pages
 }));
